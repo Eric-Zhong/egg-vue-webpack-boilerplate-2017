@@ -197,6 +197,7 @@ export default {
       // 发送ajax请求，写入订单数据
       // KB: Vue-resource的http模块学习地址http://www.jianshu.com/p/3ce2bd36596e
       // 这里使用 this.$http.post(url, option, ...)
+      // 这个讲解也很不错：http://www.it165.net/pro/html/201607/72598.html
       this.$http.post(
         '/api/v1/order',
         // '/api/v1/order?_csrf=' + vm.csrf,
