@@ -22,6 +22,8 @@ module.exports = app => {
 
   exports.static = {
     prefix: '/public/',
+    // KB: 表态文件的缓存时长
+    // maxAge: 31536000,
     dir: path.join(app.baseDir, 'public')
   };
 
@@ -30,6 +32,21 @@ module.exports = app => {
   exports.middleware = [
     'access'
   ];
+
+
+  // KB: 配置CSRF
+  // https://www.npmjs.com/package/egg-security 
+  exports.security = {
+    csrf: {
+      useSession: false,          // if useSession set to true, the secret will keep in session instead of cookie 
+      ignoreJSON: false,          // skip check JSON requests if ignoreJSON set to true 
+      cookieName: 'csrfToken',    // csrf token's cookie name 
+      sessionName: 'csrfToken',   // csrf token's session name 
+      headerName: 'x-csrf-token', // request csrf token's name in header 
+      bodyName: '_csrf',          // request csrf token's name in body 
+      queryName: '_csrf',         // request csrf token's name in query 
+    },
+  };
 
   return exports;
 };

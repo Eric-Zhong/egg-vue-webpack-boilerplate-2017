@@ -1,15 +1,9 @@
+<!--
+KB: 本项目中，这个Header算是最根的模板了。
+它如果被上级模板套用时，会把template中的内容，替换上级内容中的 <HeaderLayout>部分
+-->
 <template>
-  <header class="header">
-    <div class="container"><h1>
-      <a href="/" class="router-link-active">vue-multi-page</a></h1>
-      <ul class="nav">
-        <li class="nav-item"><a href="/" :class="{'active' : selectedMenu === '/'}">Home</a></li>
-        <li class="nav-item"><a href="/element" :class="{'active' : selectedMenu === '/element'}">Element</a></li>
-        <li class="nav-item"><a href="/app" :class="{'active' : selectedMenu === '/app'}">Single</a></li>
-        <li class="nav-item"><a href="/about" :class="{'active' : selectedMenu === '/about'}">About</a></li>
-      </ul>
-    </div>
-  </header>
+  <header  xz-src="layout/standard/header/header.vue"></header>
 </template>
 <style>
   @import "./header.css";
@@ -17,15 +11,11 @@
 <script type="text/babel">
   export default{
     data(){
-      return {
-        selectedMenu : '/'
-      }
+      return {};
     },
     computed:{
-
     },
     mounted(){
-      this.selectedMenu = window.location.pathname.toLowerCase();
     }
   }
 </script>
