@@ -199,13 +199,15 @@ export default {
       // 这里使用 this.$http.post(url, option, ...)
       // 这个讲解也很不错：http://www.it165.net/pro/html/201607/72598.html
       this.$http.post(
-        '/api/v1/order',
-        // '/api/v1/order?_csrf=' + vm.csrf,
-        vm.order,
-        option,
-        { emulateJSON: true })
-        .then(function (response) {
-          alert(response.data);
+          '/api/v1/order',
+          // '/api/v1/order?_csrf=' + vm.csrf,
+          vm.order,
+          option,
+          { 
+            emulateJSON: true 
+          }
+        ).then(function (response) {
+          console.log(response.data);
         }, function (response) {
           console.log('请求失败处理');
         });

@@ -1,5 +1,7 @@
 // KB: 如果部署到Azure上去，请参考这个文章
 // REF: http://geekswithblogs.net/shaunxu/archive/2012/09/18/node.js-adventure---when-node.js-meets-windows-azure.aspx
+// 官方还有非常详细的教程：https://docs.azure.cn/zh-cn/app-service-web/app-service-web-get-started-nodejs
+
 
 var http = require("http");
 

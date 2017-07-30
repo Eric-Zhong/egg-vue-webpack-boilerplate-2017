@@ -1,0 +1,14 @@
+{
+  "name": "worker",
+  "script": "./index.js",
+  "instances": 1,
+  "merge_logs": true,
+  "log_date_format": "YYYY-MM-DD HH:mm Z",
+  "watch": true,
+  "watch_options": {
+    "followSymlinks": true,
+    "usePolling": true,
+    "interval": 5
+  },
+  "KB": "这个配置文件，是从Azure Node文档中Git代码里的，请做参考"
+}

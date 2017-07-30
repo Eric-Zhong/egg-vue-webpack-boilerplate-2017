@@ -25,5 +25,22 @@ module.exports = app => {
       require(path.join(app.baseDir, 'build/server'))
     ]
   };
+
+
+  // XUZHONG: 这里还没学会怎么被其他组件使用
+  // Aiyun云的相关配置
+  // 在此应用中，配置了RAM
+  // xuzhong, eric.xu
+  // RAM用户登录链接 http://signin.aliyun.com/1190204613994277/login.htm
+  exports.aliyun = {
+    tableStore: {
+      accessKeyId: 'LTAIPHidSaKTwMox',
+      secretAccessKey: 'WuziCVm8Gke2SHJImyhV088H1FxKCh',
+      endpoint: 'http://ts-iphone-mall.cn-hangzhou.ots.aliyuncs.com',
+      instancename: 'ts-iphone-mall',
+      maxRetries: 20 //默认20次重试，可以省略这个参数
+    }
+  };
+
   return exports;
 };
