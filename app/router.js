@@ -20,5 +20,6 @@ module.exports = app => {
 
   // 拆分路由文件的方法
   require("./router/order")(app);
+  require("./router/backend")(app);
 
 };

@@ -1,17 +1,7 @@
 <template>
   <article>
-    <h2>订单信息</h2>
+    <h2 name="order_form" id="mark_order_form">订单信息</h2>
     <!--订单-->
-    <!--
-      <div class="cpshuoming">
-        <p>
-          <span style="color: rgb(192, 0, 0); font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px; line-height: 24px; text-align: center; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px; line-height: 24px; text-align: center; color: rgb(0, 0, 0); background-color: rgb(249, 249, 249);"> 我们将用最快的速度将产品送到你的面前</span>
-          </span>
-          <img src="../../asset/images/iphone/14936918838084776.jpg">
-        </p>
-      </div>
-      -->
     <div id="order">
       <div id="buy" class="warp">
         <form id="form" name="form" action="http://csxiangfa.com/notorder.asp" method="post" onsubmit="return postcheck()">
