@@ -9,6 +9,7 @@
     "build-prod": "cross-env NODE_ENV=production node build",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|awk '{print $2}') ",
     "start": "node index.js",
+    "start-egg-prod": "cross-env EGG_SERVER_ENV=prod npm start",
     "start-prod": "cross-env NODE_ENV=production node index.js",
     "restart": "npm run kill-port && npm run start",
     "lint": "eslint .",
