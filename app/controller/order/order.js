@@ -1,3 +1,8 @@
+var fs = require('fs');
+
+// let data_folder = 'c:\\application\\database\\order\\';
+let data_folder = __dirname;
+
 
 
 // 使用了RESTful的方式定义了Orders的Api接口
@@ -12,7 +17,28 @@ exports.index = function* (ctx) {
     console.log(form);
 
     console.log('开始异步调用创建订单');
-    var result = yield createOrder(data);
+    // var result = yield createOrder(data);
+
+
+    // 使用文件形式保存订单数据
+    // 今天的Folder
+    var folderToday = data_folder + getCurrentDate();
+
+    console.log('今天的文件夹: ' + folderToday);
+
+    // 如果Folder不存在，就创建这个Folder
+    if (fs.existsSync(folderToday)) {
+        fs.mkdirSync(folderToday);
+    }
+
+    // 文件名
+    var fileName = folderToday + '/' + Date.parse(new Date()) + '.txt';
+
+    console.log('文件路径: ' + fileName);
+
+    fs.writeFileSync(fileName, data);
+    console.log('写入数据到文件完毕');
+
     console.log('结束了异步创建订单');
 
     ctx.body = result;
@@ -28,21 +54,6 @@ exports.show = function* () { };
 exports.edit = function* () { };
 exports.update = function* () { };
 exports.destroy = function* () { };
-
-exports.index2 = function* (ctx) {
-    let model = {};
-    let token = ctx.csrf;
-    console.log(ctx.cookies);
-    token = ctx.cookies.get("csrfToken");
-    tokenB = ctx.csrf;
-    console.log("读取 Cookie 中 csrfToken 值：" + token)
-    console.log("读取 ctx.csrf 值：" + tokenB);
-    // 构造View中的数据
-    model.csrf = ctx.csrf;
-    // KB, 使用Vue生成后台html内容
-    ctx.body = "hello";
-};
-
 
 
 
@@ -135,4 +146,23 @@ var createOrder = function (data) {
         });
 
     });
+};
+
+
+var getCurrentDate = function () {
+    // 计算 yyyy-mm-dd, hh:mm:ss
+    var date = new Date();
+    var seperator1 = "-";
+    var seperator2 = ":";
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var current_date = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+    return current_date;
 };

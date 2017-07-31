@@ -7,46 +7,35 @@
     <!--
         KB: 被<Layout></Layout>套住的内容，将显示在模板定义中的Contant位置。
     -->
-  
     <!--############################ Banner ################################## -->
-
-    <!-- 
     <div class="banner" xz-slot="layout" xz-src="page/index/index">
       <p>
-        <img src="../../asset/images/iphone//14936942387277830.png">
-      </p>
-      <p>
-        <img src="../../asset/images/iphone//14936942415372251.png">
-      </p>
-      <p>
-        <img src="../../asset/images/iphone//14936942432218076.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_01.jpg">
       </p>
       <p>
         <br>
       </p>
     </div>
-
-    -->
   
     <!--############################# Buy ################################## -->
   
     <section class="buy">
       <div class="row1">
-        <strong>￥2799</strong>
+        <strong>￥2399</strong>
   
         <ol>
           <li>
-            <p>原价</p>￥3880</li>
+            <p>原价</p>￥4999</li>
           <li>
-            <p>折扣</p>1.3</li>
+            <p>折扣</p>4.8</li>
           <li>
-            <p>节省</p>￥3381</li>
+            <p>节省</p>￥2600</li>
         </ol>
   
       </div>
-  
+
       <div class="row2">
-        <strong>8952人已购买</strong>
+        <strong>147人已购买</strong>
         <div class="djs">
           <div class="time-count">
             <div id="remainTime_1" class="jltimer">
@@ -76,50 +65,60 @@
   
       <h2>购买流程</h2>
       <p>
-        <img src="../../asset/images/iphone/TB2OhBSsXXXXXceXpXXXXXXXXXX.jpg">
+        <img src="../../asset/images/iphone/purchase_workflow.jpg">
       </p>
   
       <h2>产品简介</h2>
       <p>
-        <img src="../../asset/images/iphone/iphone7_01.jpg">
-      </p>
-      <!-- 
-      <p>
-        <img src="../../asset/images/iphone/TB2sjydap55V1Bjy0FjXXbikXXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_02.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2iHebaqi5V1Bjy1zkXXcL4VXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_03.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2zXiOaxvzQeBjSZFMXXcVfFXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_04.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2HD9iap95V1Bjy0FdXXc5BVXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_05.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2071faqi5V1BjSspnXXa.3XXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_06.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2aHqhap55V1Bjy0FnXXc5XFXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_07.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2.rebaqi5V1Bjy1zkXXcL4VXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_08.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB27negaqi5V1BjSspmXXXlwpXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_09.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2Sj9aap15V1Bjy1XdXXayCFXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_10.jpg">
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2J31gaqm5V1BjSsppXXcMCVXa.jpg">
+        <img src="../../asset/images/iphone/iphone7_01_11.jpg">
       </p>
-      -->
+      <p>
+        <img src="../../asset/images/iphone/iphone7_01_12.jpg">
+      </p>
+      <p>
+        <img src="../../asset/images/iphone/iphone7_01_14.jpg">
+      </p>
+      <p>
+        <img src="../../asset/images/iphone/iphone7_01_15.jpg">
+      </p>
+      <p>
+        <img src="../../asset/images/iphone/iphone7_01_17.jpg">
+      </p>
+      <p>
+        <img src="../../asset/images/iphone/iphone7_01_18.jpg">
+      </p>
       <p>
         <br>
       </p>
       <p>
-        <img src="../../asset/images/iphone/TB2oPygaqm5V1BjSspbXXX6sXXa.png">
+        <img src="../../asset/images/iphone/purchase_comment.png">
       </p>
       <br>
       <br>
