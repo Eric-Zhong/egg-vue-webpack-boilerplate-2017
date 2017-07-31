@@ -15,10 +15,6 @@ const content = `
 </div>`;
 // const content = '<div id="app" class="xz-standard-a"><MainLayout><div slot="main"><slot></slot></div></MainLayout></div>';
 
-console.log("----------------------------------------");
-console.log(typeof window === 'object');
-console.log("----------------------------------------");
-
 const template = `<!DOCTYPE html>
 <html class="hb-loaded">
 <head>

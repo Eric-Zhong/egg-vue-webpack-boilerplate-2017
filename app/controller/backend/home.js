@@ -69,6 +69,7 @@ var getOrdersByBatch = function (query) {
         var rowCount = data.tables[0].length;
 
         var currentTable = data.tables[0];
+        
 
         console.log('table count: ' + tableCount.toString());
         console.log('row count: ' + rowCount.toString());
